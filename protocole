@@ -1,0 +1,31 @@
+"end_game" fin du jeu
+"end_turn" fin du tour
+"dump_map" dump map
+"move $1 $2" bouger la piece $1 (id) dans la direction $2
+	0 : d : droite
+	1 : w : haut			q w	2 1
+	2 : q : diagonale haut gauche	a   d	3   0
+	3 : a : gauche			  x c	  4 5
+	4 : x : bas
+	5 : c : diagonale bas droit
+"set_city_production $1 $2" demander à la ville $1 (id) de produire la piece $2 (type)
+	0 : army
+	1 : fight
+"get_width" obtenir la largeur de la carte
+"get_height" obtenir la hauteur de la carte
+"get_pieces_types_names" renvoie la liste des differents types de pieces
+	format : "0:ARMY,1:FIGHT"
+"can_move $1 $2" la piece $1 peut elle bouger dans la direction $2 ?
+"can_enter $1 $2" la piece $1 peut elle entrer dans la ville en direction $2 ?
+"can_attack $1 $2" la piece $1 peut elle attaquer dans la direction $2 ?
+"get_piece_id_by_loc $1 $2" donne l'id de la piece à la position q=$1 r=$2
+	ou "none"
+"get_transported_names_by_loc $1 $2" donne la liste des pieces transportées à la position q=$1 r=$2
+	format : "IDpiece:NamePiece,IDpiece2:NamePiece2"
+"get_city_production $1" donne la production courrante de la ville $1 (id)
+	format : "tempsProductionTotal:tempsRestant:IDtypePiece"
+	ou : "none"
+"get_list_cities" donne la liste des villes
+	format : "cityID:q:r,cityID2:q:r"
+"get_list_movables" donne la liste des pieces que l'on peut bouger
+	format : "pieceID:q:r,pieceID2:q:r"
