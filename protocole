@@ -15,9 +15,9 @@
 "get_height" obtenir la hauteur de la carte
 "get_pieces_types_names" renvoie la liste des differents types de pieces
 	format : "0:ARMY,1:FIGHT"
-"can_move $1 $2" la piece $1 peut elle bouger dans la direction $2 ?
-"can_enter $1 $2" la piece $1 peut elle entrer dans la ville en direction $2 ?
-"can_attack $1 $2" la piece $1 peut elle attaquer dans la direction $2 ?
+"can_move $1 $2" la piece $1 peut elle bouger dans la direction $2 ? ("true" ou "false")
+"can_enter $1 $2" la piece $1 peut elle entrer dans la ville en direction $2 ? ("true" ou "false")
+"can_attack $1 $2" la piece $1 peut elle attaquer dans la direction $2 ? ("true" ou "false")
 "get_piece_id_by_loc $1 $2" donne l'id de la piece à la position q=$1 r=$2
 	ou "none"
 "get_transported_names_by_loc $1 $2" donne la liste des pieces transportées à la position q=$1 r=$2
